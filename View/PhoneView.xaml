@@ -17,7 +17,7 @@
                 <MenuItem Header="Open..." Command="{Binding OpenCommand}"/>
                 <MenuItem Header="Save..." Command="{Binding SaveCommand}"/>
                 <Separator/>
-                <MenuItem Header="Close"/>
+                <MenuItem Header="Close" Click="MenuItem_Click" />
             </MenuItem>
         </Menu>
         <Grid DockPanel.Dock="Left" Height="400">
