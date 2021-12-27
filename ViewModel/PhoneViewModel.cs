@@ -35,8 +35,8 @@ namespace MVVM.ViewModel
             this.fileService = fileService;
             Phones = new ObservableCollection<Phone>
             {
-                new Phone{Title="Samsung Galaxy",Company="Samsung",Price=1500},
-                new Phone{Title="IOS 5S",Company="Apple",Price=65000}
+                //new Phone{Title="Samsung Galaxy",Company="Samsung",Price=1500},
+                //new Phone{Title="IOS 5S",Company="Apple",Price=65000}
             };
         }
 

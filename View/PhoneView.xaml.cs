@@ -1,4 +1,5 @@
-﻿using MVVM.ViewModel;
+﻿using MVVM.Model;
+using MVVM.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,7 +24,9 @@ namespace MVVM.View
         public PhoneView()
         {
             InitializeComponent();
-            DataContext = new PhoneViewModel();
+            DataContext = new PhoneViewModel(new DefaultDialogService(),
+                new XMLFileService()
+                );
         }
     }
 }
