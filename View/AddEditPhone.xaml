@@ -1,0 +1,24 @@
+﻿<Window x:Class="MVVM.View.AddEditPhone"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MVVM.View"
+        mc:Ignorable="d"
+        Title="AddEditPhone" Height="450" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBox Grid.Row="0" x:Name="TitlePhone" Margin="10 20"/>
+        <TextBox Grid.Row="1" x:Name="CompanyPhone" Margin="10 20"/>
+        <TextBox Grid.Row="2" x:Name="PricePhone" Margin="10 20"/>
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button x:Name="OK" Width="100" Margin="20" Content="OK" Click="OK_Click"/>
+            <Button x:Name="Cancel" Width="100" Margin="20" Content="Cancel" Click="Cancel_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

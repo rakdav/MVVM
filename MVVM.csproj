@@ -55,8 +55,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Model\DefaultDialogService.cs" />
+    <Compile Include="Model\IDialogService.cs" />
+    <Compile Include="Model\IFileService.cs" />
     <Compile Include="Model\Phone.cs" />
+    <Compile Include="Model\RelayCommand.cs" />
+    <Compile Include="Model\XMLFileService.cs" />
     <Compile Include="ViewModel\PhoneViewModel.cs" />
+    <Compile Include="View\AddEditPhone.xaml.cs">
+      <DependentUpon>AddEditPhone.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\PhoneView.xaml.cs">
       <DependentUpon>PhoneView.xaml</DependentUpon>
     </Compile>
@@ -64,6 +72,10 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="View\AddEditPhone.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\PhoneView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

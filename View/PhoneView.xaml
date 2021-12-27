@@ -38,15 +38,15 @@
                 </ListView>
                 <StackPanel Orientation="Horizontal" Height="30" 
                             HorizontalAlignment="Center">
-                    <Button Content="+" Width="100" Margin="5 0 5 0"/>
-                    <Button Content="Edit" Width="100" Margin="5 0 5 0"/>
-                    <Button Content="-" Width="100" Margin="5 0 5 0"/>
+                    <Button Command="{Binding AddCommand}" Content="+" Width="100" Margin="5 0 5 0"/>
+                    <Button Command="{Binding EditCommand}" Content="Edit" Width="100" Margin="5 0 5 0"/>
+                    <Button Command="{Binding DeleteCommand}" Content="-" Width="100" Margin="5 0 5 0"/>
                 </StackPanel>
             </StackPanel>
-            <StackPanel Orientation="Vertical" Grid.Column="1" Width="400">
-                <TextBlock/>
-                <TextBlock/>
-                <TextBlock/>
+            <StackPanel DataContext="{Binding SelectedPhone}"  Orientation="Vertical" Grid.Column="1" Width="400">
+                <TextBlock Text="{Binding Title,UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBlock Text="{Binding Company,UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBlock Text="{Binding Price,UpdateSourceTrigger=PropertyChanged}"/>
             </StackPanel>
         </Grid>
         <StatusBar DockPanel.Dock="Bottom"/>
